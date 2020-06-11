@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+	<title>Words for reading</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../static/css/styles.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	  <a class="navbar-brand" href="{{ url_for( 'home' ) }}">DyslexHelp</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<ul class="navbar-nav mr-auto">
+	  		<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'home' ) }}">HOME</a>
+	      	</li>
+	      	<li class="nav-item dropdown notactive">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          STUDENT
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_1' ) }}">LISTEN</a>
+	          		<a class="dropdown-item" href="https://shaileshthedarkknight.github.io/">TUTORIAL</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_2' ) }}">READ</a>
+	          	</div>
+	      </li>
+	      	<li class="nav-item dropdown active">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          TEACHER
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_1' ) }}">WORDS FOR LISTENING</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_2' ) }}">WORDS FOR READING</a>
+	          	</div>
+	      	</li>
+	      	<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'about' ) }}">ABOUT</a>
+	      	</li>
+	  </div>
+	</nav>
+	<div class="container">
+		<h1 class="welcome">Add the words...</h1>
+		<form action="#", method="post">
+		  <div class="form-group row">
+		    <label for="riWord1" class="col-sm-2 col-form-label">Word 1</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord1" name="riWord_1" value={{ri1}}>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="riWord2" class="col-sm-2 col-form-label">Word 2</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord2" name="riWord_2" value={{ri2}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord3" class="col-sm-2 col-form-label">Word 3</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord3" name="riWord_3" value={{ri3}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord4" class="col-sm-2 col-form-label">Word 4</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord4" name="riWord_4" value={{ri4}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord5" class="col-sm-2 col-form-label">Word 5</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord5" name="riWord_5" value={{ri5}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord6" class="col-sm-2 col-form-label">Word 6</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord1" name="riWord_6" value={{ri6}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord7" class="col-sm-2 col-form-label">Word 7</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord7" name="riWord_7" value={{ri7}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord8" class="col-sm-2 col-form-label">Word 8</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord8" name="riWord_8" value={{ri8}}>
+		    </div>
+		  </div>
+
+		  <div class="form-group row">
+		    <label for="riWord9" class="col-sm-2 col-form-label">Word 9</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord9" name="riWord_9" value={{ri9}}>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group row">
+		    <label for="riWord10" class="col-sm-2 col-form-label">Word 10</label>
+		    <div class="col-sm-8">
+		      <input type="text" class="form-control" id="riWord10" name="riWord_10" value={{ri10}}>
+		    </div>
+		  </div>
+
+		  <div class="form-group row wrap">
+		    <div class="col-sm-10">
+		      <input type="submit" class="button" name="submit_button" value="SUBMIT"/>
+		    </div>
+		  </div>
+		</form>
+	</div>
+</body>
+</html>

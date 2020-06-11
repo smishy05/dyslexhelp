@@ -1,0 +1,183 @@
+<html>
+<head>
+	<title>Results</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="../static/css/styles.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	  <a class="navbar-brand" href="{{ url_for( 'home' ) }}">DyslexHelp</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<ul class="navbar-nav mr-auto">
+	  		<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'home' ) }}">HOME</a>
+	      	</li>
+	      	<li class="nav-item dropdown active">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          STUDENT
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_1' ) }}">LISTEN</a>
+	          		<a class="dropdown-item" href="https://shaileshthedarkknight.github.io/">TUTORIAL</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_2' ) }}">READ</a>
+	          	</div>
+	      </li>
+	      	<li class="nav-item dropdown notactive">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          TEACHER
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_1' ) }}">WORDS FOR LISTENING</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_2' ) }}">WORDS FOR READING</a>
+	          	</div>
+	      	</li>
+	      	<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'about' ) }}">ABOUT</a>
+	      	</li>
+	  </div>
+	</nav>
+	<div class="container">
+		<h1 class="heading1" style="text-align: center;">Here is your performance</h1>
+		<img src="../static/img/down.png" alt="Front Page Logo" class="imagecenter_1">
+		<div class="row top" >
+			<div class="col-sm-4 check_words in_word">
+				<h1 class="res">Your Spelling</h1>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h1 class="res">Correct Spelling</h1>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h1 class="res">Remarks</h1>
+			</div>
+		</div>
+		<div class="row" >
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_1}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_1}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_1}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_2}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_2}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_2}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_3}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_3}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_3}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_4}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_4}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_4}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_5}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_5}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_5}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_6}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_6}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_6}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_7}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_7}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_7}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_8}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_8}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_8}}</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_9}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_9}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_9}}</h4>
+			</div>
+		</div>
+		<div class="row bottom">
+			<div class="col-sm-4 check_words in_word">
+				<h4 class="res">{{x_10}}</h4>
+			</div>
+			<div class="col-sm-4 check_words real_word">
+				<h4 class="res">{{y_10}}</h4>
+			</div>
+			<div class="col-sm-4 check_words out">
+				<h4 class="res">{{z_10}}</h4>
+			</div>
+		</div>
+		<h1 class="heading1" style="text-align: center;">Great Job! Let's practice more!</h1>
+		<div class="row ending">
+			<div class="col-sm-4 text-center"></div>
+			<div class="col-sm-4 text-center">
+	    		<div class="wrap">
+  					<button class="button" onclick="window.location.href='{{ url_for( 'student' ) }}';">PRACTICE MORE!</button>
+				</div>
+	    	</div>
+	    	<div class="col-sm-4 text-center"></div>
+		</div>
+	</div>	
+</body>
+</html>

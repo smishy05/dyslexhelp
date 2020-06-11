@@ -1,0 +1,5 @@
+Name,Number,Image,Text File,CSV File,Use
+read1,1,./static/img/read1.jpeg,./lists/read1/read1.txt,./lists/read1/read1.csv,0
+read2,2,./static/imgread2.jpeg,./lists/read2/read2.txt,./lists/read2/read2.csv,0
+read3,3,./static/imgread3.jpeg,./lists/read3/read3.txt,./lists/read3/read3.csv,0
+read4,4,./static/imgread4.jpeg,./lists/read4/read4.txt,./lists/read4/read4.csv,0

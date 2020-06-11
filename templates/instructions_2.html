@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<title>Instructions 1</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../static/css/styles.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	  <a class="navbar-brand" href="{{ url_for( 'home' ) }}">DyslexHelp</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<ul class="navbar-nav mr-auto">
+	  		<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'home' ) }}">HOME</a>
+	      	</li>
+	      	<li class="nav-item dropdown active">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          STUDENT
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_1' ) }}">LISTEN</a>
+	          		<a class="dropdown-item" href="https://shaileshthedarkknight.github.io/">TUTORIAL</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'instructions_2' ) }}">READ</a>
+	          	</div>
+	      </li>
+	      	<li class="nav-item dropdown notactive">
+	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          TEACHER
+	        	</a>
+	        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_1' ) }}">WORDS FOR LISTENING</a>
+	          		<a class="dropdown-item" href="{{ url_for( 'teacher_2' ) }}">WORDS FOR READING</a>
+	          	</div>
+	      	</li>
+	      	<li class="nav-item notactive">
+	        	<a class="nav-link" href="{{ url_for( 'about' ) }}">ABOUT</a>
+	      	</li>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row info">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h1 class="heading2">Be a master of reading...</h1>
+				<div class="card">
+					<div class = "writeup">
+						<h4>Hola Folks,</h4>
+						<p>We guess you all are bored of studying the usual way. So, we have made something for you. Let's see what you gotta do. In this section, you'll learn new words in a way.</p>
+						<br>
+						<p>Here are the steps:</p>
+						<ul>
+							<li>Click on the PROCEED button</li>
+						  	<li>You will be taken to a new page. You will see a image on the left side. It will have 10 words written, with one word on one line.</li>
+						  	<li>On the right side, you can see 10 text boxes. Each text box corresponds each word. Like if the first word in the image is 'Oil' and the second word is 'Boy'. Then, type 'Oil' in the first text box and 'Boy' in the second text box. <b>Please take care of the order of the words</b>.</li>
+						  	<li><b>Take care of the case of the letters, i.e., see if the letter is capital or small.</b></li>
+						  	<li><b>Also make sure that you don't change the page until you have written all the words.</b></li>
+						  	<li>After writing the 10 ten words, click on SUBMIT button below</li>
+						  	<li>You will be shown where you were perfect and where you missed a bit. Make sure you go through this page properly</li>
+						  	<li>Practise these words multiple times so that you can become a master of these words.</li>
+						</ul> 
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div class="row ending_2">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 text-center">
+				<div class="wrap">
+					<button class="button" onclick="window.location.href='{{ url_for( 'read' ) }}';">PROCEED</button>
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+</body>
+</html>

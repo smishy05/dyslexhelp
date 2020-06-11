@@ -1,0 +1,172 @@
+li.notactive, li.active{
+  padding: 6px;
+}
+
+li.notactive:hover{
+	background-color: #2EE59D;	
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);;
+}
+
+li.active{
+  font-weight: bold;
+}
+
+a.nav-link, a.dropdown-item{
+	font-size:12px;
+}
+
+.dropdown-menu{
+  border-radius: 20px !important;
+}
+
+a.dropdown-item:hover{
+  border-radius: 10px !important;
+  background-color: #2EE59D;
+}
+
+#navbarSupportedContent{
+  width: 100% !important;
+}
+
+.navbar{
+	padding: 0 !important;
+}
+
+.topimg{
+	width: 40%;
+}
+
+.container{
+	margin-top: 3%;
+	text-align: center;
+}
+
+.wrap {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 240px;
+  height: 45px;
+  font-family: "sans-serif";
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.welcome{
+	font-family: "sans-serif";
+	text-transform: uppercase;
+	font-weight: 1000;
+}
+
+.play{
+	width: 30px !important;
+}
+
+.check_words{
+  border: none;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+.in_word{
+  background-color: #fff694;
+}
+
+.real_word{
+  background-color: #ff9494;
+}
+
+.out{
+  background-color: #94ffb2;
+}
+
+.imagecenter_1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.top{
+  margin-top: 2%;
+}
+
+.res{
+  padding: 4px;
+}
+
+.bottom, .ending{
+  margin-bottom: 4%;
+}
+
+.ending_2{
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.heading1{
+  font-size: 400%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading2{
+  text-align: left;
+  font-size: 300%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading3{
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info{
+  margin-top: 3%;
+}
+
+.card{
+  margin-top: 1%;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px  #bdbcb7;
+  border-radius: 80px !important;
+  text-align: left;
+}
+
+.writeup{
+  border-radius: 80px !important;
+  background-color: #ffe1b0;
+  padding: 20px;
+}
+
+.warning_info{
+  color: red;
+  font-weight: bold;
+}

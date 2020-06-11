@@ -1,0 +1,10 @@
+kite
+ball
+moon
+dog
+ox
+fan
+quarter
+hat
+shell
+jug
