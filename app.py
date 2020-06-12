@@ -519,7 +519,7 @@ def addwords_2():
 			textf = dir_name + '/' + read_n + '.txt'
 			os.mknod(textf)
 			csvf = dir_name + '/' + read_n + '.csv'
-			img =  './static/img' + read_n + '.jpeg'
+			img =  './static/img/' + read_n + '.jpeg'
 			u = 0
 			with open(textf, 'w') as the_file:
 				for i in range(10):

@@ -64,8 +64,9 @@
 						  <li>Then, click on Generate Image. Make the name of the image {{ x }}.jpeg. Put the renamed image in the './static/img' directory.</li>
 						  <li>Bingo! You're done.</li>
 						  <li class="warning_info"><b>Make sure you rename the image properly and put it in the correct directory.</b></li>
-						  <li>We have provided you with 4 example cases.</li>
+						  <li>We have provided you with 5 example cases.</li>
 						  <li>It would be great if you could explain the kids what they have to do in the reading section.</li>
+						  <li>Then, click on GO BACK HOME button.</li>
 						</ul> 
 					</div>
 				</div>
@@ -73,13 +74,16 @@
 			<div class="col-sm-2"></div>
 		</div>
 		<div class = "row ending_2">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4 text-center">
+			<div class="col-sm-6 text-center">
 				<div class="wrap">
 					<button class="button" onclick="window.open('https://saurabhdaware.github.io/text-to-handwriting/','_blank');">PROCEED</button>
 				</div>
 			</div>
-			<div class="col-sm-4"></div>
+			<div class="col-sm-6 text-center">
+	    		<div class="wrap">
+  					<button class="button" onclick="window.location.href='{{ url_for( 'home' ) }}';">GO BACK HOME</button>
+				</div>
+	    	</div>
 		</div>
 	</div>
 </body>
