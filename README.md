@@ -32,28 +32,28 @@ If the screen prompts you to enter a password, please enter your Mac's user pass
 Run:
 `brew install mpg123`
 
-### Required Python packages
+## Required Python packages
 
-#### Flask
+### Flask
 `conda install -c anaconda flask`
 
 or
 
 `pip3 install flask`
 
-#### Pandas
+### Pandas
 `conda install -c anaconda pandas`
 
 or
 
 `pip3 install pandas`
 
-#### gTTS
+### gTTS
 `pip3 install gTTS`
 
 ## Running the software
 
-1) Clone this repository using `git clone `
+1) Clone this repository using `git clone https://github.com/smishy05/dyslexhelp.git`
 
 2) Go to the cloned directory and then open the terminal there. 
 
