@@ -1,12 +1,14 @@
+<!doctype html>
 <html>
 <head>
-	<title>Results</title>
+	<title>Results Set 1</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   	<link rel="stylesheet" href="../static/css/styles.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -20,7 +22,7 @@
 	  		<li class="nav-item notactive">
 	        	<a class="nav-link" href="{{ url_for( 'home' ) }}">HOME</a>
 	      	</li>
-	      	<li class="nav-item dropdown active">
+	      	<li class="nav-item dropdown notactive">
 	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          STUDENT
 	        	</a>
@@ -30,7 +32,7 @@
 	          		<a class="dropdown-item" href="{{ url_for( 'instructions_2' ) }}">READ</a>
 	          	</div>
 	      </li>
-	      	<li class="nav-item dropdown notactive">
+	      	<li class="nav-item dropdown active">
 	        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          TEACHER
 	        	</a>
@@ -178,6 +180,6 @@
 	    	</div>
 	    	<div class="col-sm-4 text-center"></div>
 		</div>
-	</div>	
+	</div>
 </body>
 </html>

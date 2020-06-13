@@ -3,6 +3,7 @@ import pandas as pd
 from gtts import gTTS
 import os
 import random
+import numpy as np
 
 app = Flask(__name__)
 
@@ -67,7 +68,8 @@ def listen(w1=None, w2=None, w3=None, w4=None, w5=None, w6=None, w7=None, w8=Non
 		df.iat[7, 0] = request.form.getlist("word_8")[0]
 		df.iat[8, 0] = request.form.getlist("word_9")[0]
 		df.iat[9, 0] = request.form.getlist("word_10")[0]
-		df.to_csv(file1, mode='w', index=False)
+		df1 = df.replace(np.nan, '', regex=True)
+		df1.to_csv(file1, mode='w', index=False)
 		if request.form['submit_button'] == 'Play1':
 			return redirect(url_for("speak", wrd=0))
 		if request.form['submit_button'] == 'Play2':
@@ -128,7 +130,9 @@ def read(image=None):
 		dict_ans = {'Answers': answers}
 		print(answers)
 		df_ans = pd.DataFrame(dict_ans)
-		df_ans.to_csv(ans_file, mode='w', index=False)
+		df1 = df_ans.replace(np.nan, '', regex=True)
+		df1.to_csv(ans_file, mode='w', index=False)
+		
 
 		if request.form['submit_button'] == 'SUBMIT':
 			return redirect(url_for("result4"))
@@ -137,6 +141,9 @@ def read(image=None):
 		files = []
 		df_check = pd.read_csv(file_check)
 		length = df_check.shape[0]
+		for i in range(length):
+			df_check.iat[i, 5] = 0
+		df_check.to_csv(file_check, mode='w', index=False)
 		for i in range(length):
 			files.append(df_check.iat[i, 0])
 		nam = random.choice(files)
@@ -167,6 +174,7 @@ def student():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -201,6 +209,7 @@ def instructions_1():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -235,6 +244,7 @@ def instructions_2():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -269,6 +279,7 @@ def teacher():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -304,6 +315,7 @@ def teacher_1():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -340,6 +352,7 @@ def teacher_2():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -375,6 +388,7 @@ def teacher_3(x=None):
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -443,6 +457,7 @@ def addwords():
 		length=df.shape[0]
 		for i in range(length):
 			df.iat[i, 0] = '-'
+		df.to_csv(file1, mode='w', index=False)
 
 		wow = "./lists/web_of_words.csv"
 		file2 = "./lists/words.csv"
@@ -541,6 +556,7 @@ def addwords_2():
 		length=df.shape[0]
 		for i in range(length):
 			df.iat[i, 0] = '-'
+		df.to_csv(file1, mode='w', index=False)
 
 		wow = "./lists/web_of_words.csv"
 		file2 = "./lists/words.csv"
@@ -576,6 +592,7 @@ def about():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -611,6 +628,7 @@ def result2():
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	file2 = "./lists/words.csv"
@@ -636,6 +654,7 @@ def result1(a_1=None, b_1=None, c_1=None, a_2=None, b_2=None, c_2=None, a_3=None
 	file1 = './lists/dictation_answers.csv'
 	file2 = './lists/words.csv'
 	df1 = pd.read_csv(file1)
+	df1 = df1.replace(np.nan, '', regex=True)
 	df2 = pd.read_csv(file2)
 
 
@@ -717,9 +736,11 @@ def result1(a_1=None, b_1=None, c_1=None, a_2=None, b_2=None, c_2=None, a_3=None
 	df_check.to_csv(file_check, mode='w', index=False)
 
 	df = pd.read_csv(file1)
+	df = df.replace(np.nan, '', regex=True)
 	length=df.shape[0]
 	for i in range(length):
 		df.iat[i, 0] = '-'
+	df.to_csv(file1, mode='w', index=False)
 
 	wow = "./lists/web_of_words.csv"
 	df_w = pd.read_csv(wow)
@@ -762,6 +783,7 @@ def result4(x_1=None, y_1=None, z_1=None, x_2=None, y_2=None, z_2=None, x_3=None
 	file12 = './lists/'+ name + '/' + name + '.csv'
 	print(file12)
 	df11 = pd.read_csv(file11)
+	df11 = df11.replace(np.nan, '', regex=True)
 	df12 = pd.read_csv(file12)
 	print(df11)
 	print(df12)
@@ -859,6 +881,12 @@ def result4(x_1=None, y_1=None, z_1=None, x_2=None, y_2=None, z_2=None, x_3=None
 	dict_word = {'Words': list_word}
 	df_word = pd.DataFrame(dict_word)
 	df_word.to_csv(file2, mode='w', index=False)
+
+	# df111 = df11.replace(np.nan, '', regex=True)
+	# for i in range(10):
+	# 	df111.iat[i, 0] = ''
+
+	df11.to_csv(file11, mode = 'w', index=False )
 
 	return render_template("result4.html", x_1=x1, y_1=y1, z_1=z1, x_2=x2, y_2=y2, z_2=z2, x_3=x3, y_3=y3, z_3=z3, x_4=x4, y_4=y4, z_4=z4, x_5=x5, y_5=y5, z_5=z5, x_6=x6, y_6=y6, z_6=z6, x_7=x7, y_7=y7, z_7=z7, x_8=x8, y_8=y8, z_8=z8, x_9=x9, y_9=y9, z_9=z9, x_10=x10, y_10=y10, z_10=z10)
 
