@@ -7,11 +7,13 @@ As a student, you can use this application to listen to words and try to spell t
 
 As a teacher, you can make the practice of your students better. You can add words for both, enhancing the listening and reading skills of kids. Please make sure you add words such that it helps them to learn a lot and at the same time does not demoralise them.
 
-I hope that this software can help both the teachers and students. I would be really happy to get your review. Please read below for technicalities.
+I hope that this software can help both the teachers and students. I would be really happy to hear from you about this application. Please read below for technicalities.
 
 ## Development Environment
 This software was developed on Ubuntu LTS 20.04 and with Python 3.7.2. 
+
 **Internet connection is necessary for running this software.**
+
 **This version of the software is only meant for running this locally.**
 
 ## Software Requirements
