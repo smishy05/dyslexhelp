@@ -1,7 +1,18 @@
-# dyslexhelp
+# DyslexHelp
+
+## About DyslexHelp
+It has been observed that people with dyslexia are extremely smart but face small issues in recognising words. They face difficulty in mapping letters to their sounds. They also have difficulty in reading handwritten letters. This leads to anxiety in kids and also affects their mental health. DyslexHelp is an application to tackle this issue.
+
+As a student, you can use this application to listen to words and try to spell them. You can then find out where you're going right and where it's going wrong. It also helps you to improve your reading ability. In the other module, you will read handwritten texts and try to spell them correctly. You also have a tutorial that teaches you similar sounding letters or group of letters. Here, there's no one to judge you and the scope of growth is huge!
+
+As a teacher, you can make the practice of your students better. You can add words for both, enhancing the listening and reading skills of kids. Please make sure you add words such that it helps them to learn a lot and at the same time does not demoralise them.
+
+I hope that this software can help both the teachers and students. I would be really happy to get your review. Please read below for technicalities.
 
 ## Development Environment
 This software was developed on Ubuntu LTS 20.04 and with Python 3.7.2. 
+**Internet connection is necessary for running this software.**
+**This version of the software is only meant for running this locally.**
 
 ## Software Requirements
 
