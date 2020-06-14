@@ -48,6 +48,9 @@ If the screen prompts you to enter a password, please enter your Mac's user pass
 Run:
 `brew install mpg123`
 
+#### Windows
+Use this link to download https://www.mpg123.de/download.shtml .
+
 ## Required Python packages
 
 ### Flask
