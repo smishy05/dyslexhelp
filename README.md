@@ -26,7 +26,7 @@ If you are having a previous version of Python, then use https://docs.anaconda.c
 If you are using pip3, then use this link - https://www.youtube.com/watch?v=N5vscPTWKOk to setup virtual environment and then, install the python packages given below.
 
 
-### mgl123
+### mpg123
 This is required for playing sound in the background. 
 
 #### Ubuntu
